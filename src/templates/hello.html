@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Hello world!!</h3>
+    <h4>API services: </h4>
+    <ul>
+        <li>
+            <p>GET: all colors:</p>
+            <p>http://localhost:5000/colors</p>
+        </li>
+        <li>
+            <p>GET: one colors:</p>
+            <p>http://localhost:5000/color/1</p>
+        </li>
+        <li>
+            <p>GET: Filter by favorite/non-favorite:</p>
+            <p>http://localhost:5000/colors?favorite=false</p>
+        </li>
+        <li>
+            <p>POST: Add a color</p>
+            <p>http://localhost:5000/colors</p>
+            <p>Example body</p>
+            {
+                "name": "Red",
+                "rgb": "FF0000",
+                "favorite": true
+            }
+        </li>
+        <li>
+            <p>PUT: Update a color</p>
+            <p>http://localhost:5000/colors</p>
+            <p>Example body</p>
+            {
+                "id": 1,
+                "name": "Blue",
+                "rgb": "0000FF",
+                "favorite": false
+            }
+        </li>
+        <li>
+            <p>DELETE: Delete a color</p>
+            <p>http://localhost:5000/colors</p>
+            <p>Example body</p>
+            {
+                "id": 1,
+            }
+        </li>
+    </ul>
+</body>
+</html>
